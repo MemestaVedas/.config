@@ -1,0 +1,110 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mode": "dock",
+    "reload_style_on_change": true,
+    "gtk-layer-shell": true,
+  
+    // <<--< Positions >-->>
+  
+    "modules-left": [
+      "hyprland/workspaces"  // workspaces
+    ],
+  
+    "modules-center": [
+      "mpris"                // media info
+    ],
+  
+    "modules-right": [
+      "pulseaudio",          // volume
+      "backlight",           // brightness
+      "battery",             // battery
+      "clock#time",          // time
+      "tray"                 // system tray
+    ],
+  
+    // <<--< Modules >-->>
+  
+    "hyprland/workspaces": {
+      "on-scroll-up": "hyprctl dispatch workspace -1",
+      "on-scroll-down": "hyprctl dispatch workspace +1",
+      "persistent-workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      }
+    },
+  
+    "mpris": {
+      "format": "{player_icon} {title} - {artist}",
+      "format-paused": "{status_icon} {title} - {artist}",
+      "player-icons": {
+        "default": "󰝚 ",
+        "spotify": "<span foreground='#a6e3a1'>󰓇 </span>",
+        "firefox": "<span foreground='#f38ba8'>󰗃 </span>"
+      },
+      "status-icons": {
+        "paused": "<span color='#b4befe'>\u200A\u200A󰏤\u2009\u2009</span>"
+      },
+      "tooltip-format": "Playing: {title} - {artist}",
+      "tooltip-format-paused": "Paused: {title} - {artist}",
+      "on-click": "/home/mv/.config/waybar/scripts/mpris_popup.sh", // Script to show popup
+      "min-length": 5,
+      "max-length": 35
+    },
+  
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-muted": "󰝟 {volume}%",
+      "format-icons": {
+        "default": ["󰕿", "󰖀", "󰕾"],
+        "headphone": "󰋋",
+        "headset": "󰋋"
+      },
+      "tooltip-format": "Device: {desc}",
+      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+      "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+      "min-length": 6,
+      "max-length": 6
+    },
+  
+    "backlight": {
+      "format": "{icon} {percent}%",
+      "format-icons": ["", "", "", "", "", "", "", "", ""],
+      "tooltip": false,
+      "on-scroll-up": "brightnessctl set +5%",
+      "on-scroll-down": "brightnessctl set 5%-",
+      "min-length": 6,
+      "max-length": 6
+    },
+  
+    "battery": {
+      "states": {
+        "warning": 20,
+        "critical": 10
+      },
+      "format": "{icon} {capacity}%",
+      "format-icons": ["󰂎", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "format-charging": " {capacity}%",
+      "tooltip-format": "Discharging: {time}",
+      "tooltip-format-charging": "Charging: {time}",
+      "interval": 1,
+      "min-length": 6,
+      "max-length": 6
+    },
+  
+    "clock#time": {
+      "format": "{:%H:%M}",
+      "tooltip": false,
+      "min-length": 6,
+      "max-length": 6
+    },
+  
+    "tray": {
+      "icon-size": 16,
+      "spacing": 5
+    }
+}
