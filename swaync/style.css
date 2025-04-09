@@ -107,9 +107,17 @@
 .widget-mpris-album-art {
   border-radius: 12px;
 }
+.widget-mpris-player button {
+  color: #ffffff; /* Set the text/icon color to white */
+  background: transparent; /* Transparent background */
+  border: none; /* Remove any borders */
+  box-shadow: none; /* Remove any shadows */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
 .widget-mpris-player button:hover {
-  /* The media player buttons (play, pause, next, etc...) */
-  background: @noti-bg-hover;
+  background: rgba(255, 255, 255, 0.2); /* Add a subtle white background on hover */
+  color: #ffffff; /* Ensure the color remains white */
+  border-radius: 8px; /* Add rounded corners for hover effect */
 }
 .widget-mpris > box > button {
   /* Change player side buttons */
@@ -232,18 +240,31 @@ trough slider:hover {
 .widget-inhibitors > button:hover {
   background: @noti-bg-hover;
 }
+
+/* Remove the outline and border from notification rows */
 .notification-row {
   outline: none;
   border: none;
+  box-shadow: none; /* Remove any shadow if present */
   background-image: linear-gradient(-45deg, #A8C4D9 0%, #9B7AD4 52%, #BD90CF 90%);
-  border-radius: 20;
+  border-radius: 20px; /* Keep the rounded corners */
   padding: 0px;
-  box-shadow: none;
 }
 
+/* Remove the border from the actual notification */
+.notification-row .notification-background .notification {
+  border: none;
+  box-shadow: none; /* Remove any shadow if present */
+  background: alpha(@color0, 0.5); /* Keep the background color */
+  border-radius: 12px; /* Keep the rounded corners */
+}
+
+/* Optional: Remove focus styles when hovering or focusing */
 .notification-row:focus,
 .notification-row:hover {
-  background: alpha(@color14, 0.5); /* @noti-bg-focus */
+  background: alpha(@color14, 0.5); /* Adjust hover background if needed */
+  outline: none;
+  border: none;
 }
 
 .notification-row .notification-background {
@@ -273,7 +294,6 @@ trough slider:hover {
 .notification-row .notification-background .notification {
   /* The actual notification */
   border-radius: 12px;
-  border: 2px solid alpha(@color8, 0.5); /* @border */
   padding: 0;
   transition: background 0.15s ease-in-out;
   background: alpha(@color0, 0.5); /* @noti-bg */
@@ -398,7 +418,7 @@ trough slider:hover {
   color: alpha(@color15, 1.0); /* @text-color */
 }
 
-.notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-button:disabled {
+.notification-row .notification-background .notification .notification-default-action .inline-reply .inline-reply-button:disabled {
   background: initial;
   color: alpha(@color7, 0.5); /* @text-color-disabled */
   border: 1px solid alpha(@color8, 0.5); /* @border */
