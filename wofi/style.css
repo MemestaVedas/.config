@@ -1,0 +1,96 @@
+* {
+transition: all 3s ease;
+}
+
+window {
+  position: relative;
+	font-family: "SF Pro Display";
+	font-size: 13px;
+  margin: 0px;
+  background-image: url('/home/mv/randomshit/navia.png');
+  background-size: cover;
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+#input {
+    padding: 4px;
+    margin: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    background:linear-gradient(45deg, #FFFFFF 20%, #834EA7 45%, #F3A760 70%, #60BAF3 90%); 
+    outline: none;
+    border-radius: 15px;
+    color: #2A2C3D;
+}
+
+#input image {
+    color: #2B283E;
+}
+
+#input:focus {
+    border: none;
+   	outline: none;
+}
+
+#inner-box {
+    margin: 20px;
+    margin-top: 0px;
+    border: none;
+    color: #2B283E;
+    border-radius: 16px;
+}
+
+#inner-box * {
+    transition: none;
+}
+
+#outer-box {
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    border-radius: 16px;
+}
+
+#scroll {
+    margin-top: 5px;
+    border: none;
+    border-radius: 16px;
+    margin-bottom: 5px;
+}
+
+#text:selected {
+    size: 200px;
+    color: #BF6C19;
+    font-weight: italic;
+}
+
+#img {
+    margin-right: 20px;
+    background: transparent;
+}
+
+#text {
+    margin: 0px;
+    color: #3C3F48;
+    border: none;
+    padding: 0px;
+    background: transparent;
+    size: 50px;
+}
+
+#entry {
+    margin: 0px;
+    border: none;
+    border-radius: 16px;
+    background-color: transparent;
+    min-height:32px;
+    font-weight: bold;
+}
+
+#entry:selected {
+    outline: none;
+    margin: 0px;
+    border: none;
+    background: transparent;
+}

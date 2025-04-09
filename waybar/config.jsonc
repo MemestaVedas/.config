@@ -20,7 +20,8 @@
       "backlight",           // brightness
       "battery",             // battery
       "clock#time",          // time
-      "tray"                 // system tray
+      "tray",                // system tray
+      "custom/swaync"        // swaync button
     ],
   
     // <<--< Modules >-->>
@@ -106,5 +107,15 @@
     "tray": {
       "icon-size": 16,
       "spacing": 5
+    },
+
+    // Custom swaync button
+    "custom/swaync": {
+      "format": "󰂚", // Icon and label
+      "tooltip": "Open Notification Center",
+      "on-click": "swaync-client -t -sw", // Command to open swaync
+      "icon": "󰂚", // Icon for the button
+      "min-length": 6,
+      "max-length": 20
     }
 }
