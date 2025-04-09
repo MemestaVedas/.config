@@ -1,0 +1,39 @@
+# ==== Application Configs ====
+/BraveSoftware/
+/Code/
+/Cursor/
+/Electron/
+/Thunar/
+/dconf/
+/discord/
+/github-copilot/
+/obsidian/
+/pulse/
+/spicetify/
+/spotify/
+/systemd/
+/vlc/
+/xfce4/
+
+# ==== Cache/Generated Files ====
+*.log
+*.tmp
+*.swp
+*.bak
+*.pid
+*.DS_Store
+
+# ==== Local Dev Files ====
+/mimeapps.list
+/pavucontrol.ini
+/user-dirs.*
+/QtProject.conf
+
+# ==== Editor/IDE ====
+.idea/
+.vscode/
+*.code-workspace
+
+# ==== OS-Specific ====
+.DS_Store
+Thumbs.db
