@@ -11,7 +11,7 @@
 
 /* <<--< Main Background >-->> */
 
-window#waybar > box {
+window#waybar>box {
   background-color: @main-bg;
   margin: 2px;
 }
@@ -31,6 +31,7 @@ tooltip {
   border-radius: 8px;
   border-color: @main-br;
 }
+
 tooltip label {
   color: @main-fg;
   font-weight: normal;
@@ -46,12 +47,15 @@ tooltip label {
   margin: 2px 0;
   padding: 0 2px;
   transition: none;
+  
 }
+
 #workspaces button:hover {
   color: @hover-fg;
   background: @hover-bg;
   text-shadow: none;
 }
+
 #workspaces button.active {
   color: @active-fg;
   background: @active-bg;
@@ -59,6 +63,7 @@ tooltip label {
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
   margin: 2px;
   padding: 0 6px;
+  background-image: linear-gradient(-45deg, #A8C4D9 0%, #9B7AD4 52%, #BD90CF 90%);
 }
 
 /* <<--< General >-->> */
@@ -113,6 +118,7 @@ tooltip label {
 #custom-ws {
   background: @main-bg;
 }
+
 #custom-ws:hover {
   color: @hover-fg;
 }
@@ -125,9 +131,11 @@ tooltip label {
   margin-bottom: 0;
   padding-left: 2px;
 }
+
 #workspaces {
   background: @workspaces;
 }
+
 #custom-right1 {
   color: @workspaces;
   background: @main-bg;
@@ -140,11 +148,13 @@ tooltip label {
 #custom-paddc {
   padding-right: 22px;
 }
+
 #custom-left2 {
   color: @cpuinfo;
   background: @main-bg;
   padding-left: 3px;
 }
+
 #custom-cpuinfo {
   background: @cpuinfo;
   padding-left: 1px;
@@ -158,14 +168,17 @@ tooltip label {
   background: @cpuinfo;
   padding-left: 3px;
 }
+
 #memory {
   background: @memory;
   padding-left: 1px;
   padding-right: 0;
 }
+
 #memory.warning {
   color: @warning;
 }
+
 #memory.critical {
   color: @critical;
 }
@@ -177,9 +190,11 @@ tooltip label {
   background: @memory;
   padding-left: 3px;
 }
+
 #cpu {
   background: @cpu;
 }
+
 #custom-leftin1 {
   color: @cpu;
   margin-bottom: -1px;
@@ -194,6 +209,7 @@ tooltip label {
   margin-bottom: -2px;
   padding-left: 3px;
 }
+
 #custom-distro {
   color: @distro-fg;
   background: @distro-bg;
@@ -201,6 +217,7 @@ tooltip label {
   padding: 0 0 0 3px;
   text-shadow: 0 0 1.5px rgba(0, 0, 0, 1);
 }
+
 #custom-right2 {
   color: @distro-bg;
   background: @main-bg;
@@ -214,18 +231,22 @@ tooltip label {
   color: @time;
   margin-bottom: -1px;
 }
+
 #idle_inhibitor {
   background: @time;
   padding: 0 0 0 7px;
 }
+
 #idle_inhibitor:hover {
   color: @hover-fg;
 }
+
 #clock.time {
   background: @time;
   margin-left: -2px;
   padding: 0 3px 0 0;
 }
+
 #custom-right3 {
   color: @time;
   background: @date;
@@ -236,9 +257,11 @@ tooltip label {
 #clock.date {
   background: @date;
 }
+
 #clock.date:hover {
   color: @hover-fg;
 }
+
 #custom-right4 {
   color: @date;
   background: @tray;
@@ -251,6 +274,7 @@ tooltip label {
   padding-right: 8px;
   background: @tray;
 }
+
 #custom-wifi:hover {
   color: @hover-fg;
 }
@@ -259,6 +283,7 @@ tooltip label {
   padding-right: 5px;
   background: @tray;
 }
+
 #bluetooth:hover {
   color: @hover-fg;
 }
@@ -267,9 +292,11 @@ tooltip label {
   padding-right: 8px;
   background: @tray;
 }
+
 #custom-update:hover {
   color: @hover-fg;
 }
+
 #custom-right5 {
   color: @tray;
   background: @main-bg;
@@ -283,6 +310,7 @@ tooltip label {
   padding-right: 8px;
   padding-left: 8px;
 }
+
 #mpris:hover {
   color: @hover-fg;
 }
@@ -294,9 +322,11 @@ tooltip label {
   background: @main-bg;
   padding-left: 3px;
 }
+
 #pulseaudio {
   background: @pulseaudio;
 }
+
 #pulseaudio:hover {
   color: @hover-fg;
 }
@@ -308,6 +338,7 @@ tooltip label {
   background: @pulseaudio;
   padding-left: 2px;
 }
+
 #backlight {
   background: @backlight;
 }
@@ -319,16 +350,20 @@ tooltip label {
   background: @backlight;
   padding-left: 2px;
 }
+
 #battery {
   color: @module-fg;
   background: @battery;
 }
+
 #battery.warning {
   color: @warning;
 }
+
 #battery.critical {
   color: @critical;
 }
+
 #battery.charging {
   color: @charging;
 }
@@ -340,6 +375,7 @@ tooltip label {
   background: @main-bg;
   margin-bottom: -1px;
 }
+
 #custom-power {
   color: @main-bg;
   background: @power;
@@ -349,6 +385,7 @@ tooltip label {
   margin: 2px 4px 2px 0;
   padding: 0 6px 0 9px;
 }
+
 #custom-power:hover {
   color: @hover-fg;
   background: @hover-bg;
@@ -358,24 +395,88 @@ tooltip label {
 
 /* Swaync Button Styling */
 #custom-swaync {
-  background-image: linear-gradient(-45deg, #A8C4D9 0%, #9B7AD4 52%, #BD90CF 90%);
-  border-radius: 24px; /* Match the rounded corners of notifications */
-  padding: 0px 0px; /* Add padding for better spacing */
+background-image: linear-gradient(-45deg, #A8C4D9 0%, #9B7AD4 52%, #BD90CF 90%);
+  border-radius: 24px;
+  /* Match the rounded corners of notifications */
+  padding: 0px 0px;
+  /* Add padding for better spacing */
   font-weight: bold;
-  color: #ffffff; /* White text for contrast */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  color: #ffffff;
+  /* White text for contrast */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for depth */
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 #custom-swaync:hover {
   background-image: linear-gradient(-45deg, #9B7AD4 0%, #BD90CF 52%, #A8C4D9 90%);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover */
-  color: #ffffff; /* Ensure text remains white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Slightly larger shadow on hover */
+  color: #ffffff;
+  /* Ensure text remains white */
 }
 
 #custom-swaync:active {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Reduce shadow on click */
   /*transform: scale(0.98); Slightly shrink the button for a click effect */
+}
+
+/* General Waybar Styling */
+#waybar {
+  background: transparent; /* Make the overall bar background transparent */
+  padding: 0; /* Remove padding to focus on individual sections */
+  margin: 0;
+
+
+}
+
+/* Left Section Styling */
+#modules-left {
+  background-image: linear-gradient(-45deg, #A8C4D9 0%, #9B7AD4 52%, #BD90CF 90%);
+  border-radius: 12px; /* Fully rounded corners for the left section */
+  padding: 5px 10px;
+  margin-left: 5px; /* Add spacing from the edge of the screen */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Center Section Styling */
+#modules-center {
+  background-image: linear-gradient(-45deg, #A8C4D9 0%, #9B7AD4 52%, #BD90CF 90%);
+  border-radius: 12px; /* Fully rounded corners for the center section */
+  padding: 5px 10px;
+  margin: 0 5px; /* Add spacing between the left and right sections */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+
+
+}
+
+/* Right Section Styling */
+#modules-right {
+  background-image: linear-gradient(-45deg, #A8C4D9 0%, #9B7AD4 52%, #BD90CF 90%);
+  border-radius: 12px; /* Fully rounded corners for the right section */
+  padding: 5px 10px;
+  margin-right: 5px; /* Add spacing from the edge of the screen */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Consistent Font and Icon Styling */
+#modules-left,
+#modules-center,
+#modules-right {
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
+  font-size: 12px;
+  color: #ffffff; /* White text for contrast */
+  font-weight: bold;
+}
+
+/* Hover Effects for All Sections */
+#modules-left:hover,
+#modules-center:hover,
+#modules-right:hover {
+  background-image: linear-gradient(-45deg, #9B7AD4 0%, #BD90CF 52%, #A8C4D9 90%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover */
+
 }
 
 /* <<--< FONT SIZES >-->> */
@@ -441,6 +542,7 @@ tooltip label {
   border-radius: 8px;
   padding: 0 2px;
 }
+
 #workspaces button.active {
   padding: 0 6px;
 }
