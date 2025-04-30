@@ -43,3 +43,6 @@ kdeconnect/certificate.pem
 kdeconnect/config
 kdeconnect/privateKey.pem
 kdeconnect/trusted_devices
+
+
+/nora/
