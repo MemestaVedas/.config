@@ -37,3 +37,9 @@
 # ==== OS-Specific ====
 .DS_Store
 Thumbs.db
+
+# Ignore KDE Connect files
+kdeconnect/certificate.pem
+kdeconnect/config
+kdeconnect/privateKey.pem
+kdeconnect/trusted_devices
