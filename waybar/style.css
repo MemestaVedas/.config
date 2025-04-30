@@ -8,28 +8,31 @@ window#waybar {
   transition-duration: .5s;
 }
 #workspaces{
-  background-color: #ffffff;
-  border: rgba(0,0,0,0.0);
+  background-color: #62E6FF;
+  border: #FF3AA6 1px solid;
   border-radius: 0px 0px 12px 0px;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 7px 0px 5px;
   margin: 0px 10px 0px 0px;
 }
 #workspaces button {
-  padding: 0px 0px 0px 0px;
-  font-size: 40px;
+  padding: 0px 2px 0px 2px;
+  font-size: 45px;
   transition: all 0.1s linear;
   opacity: 1.0;
   margin: -5px 0px -15px 0px;
+  color: #FF3AA6;
+
 }
 
 #workspaces button.active {
-  padding: 0px 0px 2px 0px;
-  color: #23535f;
+  padding: 0px 0px 10px 2px;
+  font-size: 20px;
+  color: #FF3AA6;
 }
 
 /* -----------------------------------MIDDLE-------------------------------------- */
 #mpris,#clock.time{
-  background-color: white;
+  background-color: #FF3AA6;
   font-size: 16px;
   font-weight: bolder;
 }
@@ -43,15 +46,19 @@ window#waybar {
 
 /* ------------------------------------RIGHT--------------------------------------- */
 #pulseaudio, #backlight, #battery{
-  background-color: #ffffff;
+  background-color: #62E6FF;
   font-size: 16px;
   font-weight: bolder;
+  color: #FF3AA6
 }
 
 #pulseaudio{
-  padding: 0px 0px 0px 10px;
+  padding: 0px 3px 0px 10px;
   border-radius: 0px 0px 0px 12px;
 }
 #battery{
   padding: 0px 10px 0px 0px;
+}
+#backlight{
+  padding: 0px 3px 0px 0px;
 }
