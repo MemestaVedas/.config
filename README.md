@@ -1,3 +1,3 @@
-# WIP
+# wip
 
-![Image][https://files.catbox.moe/xmnl35.png]
+![Alt Text](https://files.catbox.moe/xmnl35.png)
