@@ -44,5 +44,8 @@ kdeconnect/config
 kdeconnect/privateKey.pem
 kdeconnect/trusted_devices
 
+gtk-3.0/
+nwg-look
+xsettingsd
 
 /nora/

@@ -1,7 +1,7 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
-  "positionX": "left",
-  "positionY": "bottom",
+  "positionX": "center",
+  "positionY": "top",
   "layer": "overlay",
   "control-center-layer": "top",
   "layer-shell": true,
@@ -32,8 +32,7 @@
       "title",
       "notifications",
       "volume",
-      "backlight",
-      "buttons-grid"
+      "backlight"
   ],
   "widget-config": {
       "title": {
