@@ -25,7 +25,7 @@ window#waybar {
 
 #workspaces button.active {
   padding: 0px 0px 0px 2px;
-
+  font-size: 25px;
   color: #FF3AA6;
 }
 
