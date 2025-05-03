@@ -14,7 +14,7 @@
 /systemd/
 /vlc/
 /xfce4/
-
+/go/
 # ==== Cache/Generated Files ====
 *.log
 *.tmp

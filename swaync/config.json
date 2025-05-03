@@ -1,7 +1,7 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
-  "positionX": "center",
-  "positionY": "top",
+  "positionX": "left",
+  "positionY": "bottom",
   "layer": "overlay",
   "control-center-layer": "top",
   "layer-shell": true,
@@ -32,7 +32,8 @@
       "title",
       "notifications",
       "volume",
-      "backlight"
+      "backlight",
+      "buttons-grid"
   ],
   "widget-config": {
       "title": {
@@ -40,7 +41,6 @@
           "clear-all-button": true,
           "button-text": "󰆴"
       },
-
       "mpris": {
           "image-size": 80,
           "image-radius": 0
