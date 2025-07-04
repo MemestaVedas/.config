@@ -26,7 +26,7 @@ PanelWindow {
             anchors.left: parent.left
             anchors.verticalCenter: parent.verticalCenter
             anchors.leftMargin: 10
-            spacing: 5
+            spacing: 5 // Spacing between workspaces
 
             Repeater {
                 model: Hyprland.workspaces
